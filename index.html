@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Urban Bites</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/all.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <nav
+            class="navbar navbar-expand-lg navbar-light px-3 fixed-top"
+            style="background-color: rgb(229, 229, 229)"
+        >
+            <div class="container-fluid">
+                <div class="image">
+                    <img
+                        src="images/logo.png"
+                        alt="..."
+                        width="50px"
+                        height="50px"
+                    />
+                </div>
+                <a
+                    class="navbar-brand fs-3 border-end border-secondary pe-3 border-2"
+                    href="#"
+                    style="color: var(--primary-color)"
+                    ><b>&nbsp; Urban Bite</b></a
+                >
+                <button
+                    class="navbar-toggler collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="navbar-collapse collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Menu
+                            </a>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdown"
+                            >
+                                <li>
+                                    <a class="dropdown-item" href="#">PIZZA</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">BURGER</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >HEALTHY SALAD</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">MEALS</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >CRISPY CHICKEN</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >MORE...</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <button class="btn btn-warning me-2" type="submit">
+                            Search
+                        </button>
+                        <button
+                            class="btn btn-outline-warning"
+                            data-bs-toggle="modal"
+                            data-bs-target="#loginModal"
+                            type="button"
+                        >
+                            Login
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="loginModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Log in</h4>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label
+                                for="exampleFormControlInput1"
+                                class="form-label"
+                                >Email address</label
+                            >
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="Enter your email"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label
+                                for="exampleFormControlInput1"
+                                class="form-label"
+                                >Password</label
+                            >
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="****"
+                            />
+                        </div>
+                        <input type="checkbox" /> Remember me
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-warning w-100"
+                            data-bs-dismiss="modal"
+                        >
+                            Log in
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            id="heroCarousel"
+            class="carousel slide hero-carousel"
+            data-bs-ride="carousel"
+        >
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div
+                    class="carousel-item active"
+                    style="background-image: url('../images/food3.jpg')"
+                >
+                    <div class="overlay"></div>
+
+                    <div class="hero-caption mx-auto">
+                        <h3>SUSHI</h3>
+                        <p>
+                            That sushi was absolutely amazing! We couldn't get
+                            enough.
+                        </p>
+                        <button class="btn btn-sm" onclick="location.href='#'">
+                            Call Us
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="carousel-item"
+                    style="background-image: url('../images/food2.jpg')"
+                >
+                    <div class="overlay"></div>
+                    <div class="hero-caption mx-auto">
+                        <h3>BURGERS</h3>
+                        <p>
+                            Juicy burgers — cooked to perfection. A crowd
+                            favorite.
+                        </p>
+                        <button class="btn btn-sm" onclick="location.href='#'">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="carousel-item"
+                    style="background-image: url('../images/dessert.jpg')"
+                >
+                    <div class="overlay"></div>
+                    <div class="hero-caption mx-auto">
+                        <h3>DESSERTS</h3>
+                        <p>Sweet treats to finish your meal the perfect way.</p>
+                        <button class="btn btn-sm" onclick="location.href='#'">
+                            See Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="d-flex flex-column position-fixed top-50 translate-middle-y me-2 gap-3 social-icons opacity-50"
+        >
+            <a href="#" class="text-warning"
+                ><i class="fab fa-facebook-square fa-2x"></i
+            ></a>
+            <a href="#" class="text-warning"
+                ><i class="fab fa-twitter-square fa-2x"></i
+            ></a>
+            <a href="#" class="text-warning"
+                ><i class="fab fa-whatsapp-square fa-2x"></i
+            ></a>
+            <a href="#" class="text-warning"
+                ><i class="fab fa-instagram-square fa-2x"></i
+            ></a>
+            <a href="#" class="text-warning"
+                ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+        </div>
+
+        <section>
+            <div class="container-fluid rounded p-3 welcome-block">
+                <h3 class="section-heading"><b>Welcome</b></h3>
+                <p class="text-muted">
+                    Welcome to Urban Bite - Step into a world of gourmet fast
+                    food crafted with passion, percision, and premium
+                    ingredients. Whether you're craving a juicy burger,
+                    artisanal pizza, or a fresh vibrant salad __ we have
+                    redefined fast dining to offer you elegance flavor, and
+                    comfort in every bite. Sit back, relax, and let us serve you
+                    excellence __ fast.
+                </p>
+                <button type="button" class="btn btn-warning text-light">
+                    Learn More
+                </button>
+            </div>
+            <hr />
+
+            <div
+                class="container-fluid rounded p-5"
+                style="background-color: rgb(164, 164, 164)"
+            >
+                <h3 class="text-light text-center">
+                    <i><b>The Most Famous Dishes In Our Restaurant</b></i>
+                </h3>
+            </div>
+
+            <div class="accordion mt-4" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button
+                            class="accordion-button collapsed text-secondary shadow-none border-bottom border-secondary"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne"
+                        >
+                            Fried Chicken
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            A crispy and flavorful meal made with tender chicken
+                            pieces, seasoned with special herbs and spices,
+                            coaled in crunchy crust. Perfectly fried and served
+                            hot with fries, coleslaw, or your favourite souce.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button
+                            class="accordion-button collapsed text-secondary shadow-none border-bottom border-secondary"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                        >
+                            Types of salad
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            Enjoy a variety of fresh and flavorful salads made
+                            with hand-picked ingredients. Choose from classic
+                            salad, fresh garden salad, tangy Greek salad with
+                            olives and fela, or creamy coleslaw perfect as a
+                            healthy meal.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button
+                            class="accordion-button collapsed text-secondary shadow-none border-bottom border-secondary"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                        >
+                            Types of pizza
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            iscover a range of deliciouse pizzas to satisfy
+                            every craving. From the classic Margheritta with
+                            fresh basil and mozzarella, to pepperoni loaded with
+                            spicy slices, to BBQ chicken with tangy souce, or
+                            veggie pizza toped with colorful vegetables.Hot
+                            ,cheesy,and freshly backed every time.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </section>
+
+        <section>
+            <div
+                class="container-fluid rounded p-4"
+                style="background-color: rgb(164, 164, 164)"
+            >
+                <h3 class="text-light text-center">
+                    <i><b>Translate from Arabic to English</b></i>
+                </h3>
+            </div>
+            <div
+                class="container-fluid rounded p-3"
+                style="
+                    background: linear-gradient(
+                        to top,
+                        gray,
+                        rgb(203, 203, 203)
+                    );
+                "
+            >
+                <span class="text-light fs-4"><b>Write And Translate</b></span>
+                <span class="fs-4" style="color: var(--primary-color)"
+                    ><b>&nbsp Press Here</b></span
+                ><br />
+
+                <button
+                    type="button"
+                    class="btn btn-warning text-light copyBtn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal1"
+                >
+                    Copy
+                </button>
+                <span
+                    class="badge rounded-pill bg-secondary ms-2 copiedLabel d-none"
+                    >Copied!</span
+                >
+
+                <br /><br />
+                <div
+                    class="modal fade"
+                    id="myModal1"
+                    tabindex="-1"
+                    aria-labelledby="myModalLabel1"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog mt-5">
+                        <div class="modal-content">
+                            <div class="modal-header border-bottom">
+                                <h5 class="modal-title text-warning">
+                                    <i>Restaurant</i>
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <div class="modal-body">the message copied</div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-dark"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Ok
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <textarea
+                    class="rounded mt-2 w-100 p-2"
+                    style="height: 150px"
+                    placeholder="translate:"
+                ></textarea>
+            </div>
+            <hr />
+
+            <div
+                class="container-fluid rounded p-4"
+                style="background-color: rgb(164, 164, 164)"
+            >
+                <h3 class="text-light text-center">
+                    <i><b>Translate from Arabic to Frensh</b></i>
+                </h3>
+            </div>
+            <div
+                class="container-fluid rounded p-3"
+                style="
+                    background: linear-gradient(
+                        to top,
+                        gray,
+                        rgb(203, 203, 203)
+                    );
+                "
+            >
+                <span class="text-light fs-4"><b>Write And Translate</b></span>
+                <span class="fs-4" style="color: var(--primary-color)"
+                    ><b>&nbsp Press Here</b></span
+                ><br />
+
+                <button
+                    type="button"
+                    class="btn btn-warning text-light copyBtn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal1"
+                >
+                    Copy
+                </button>
+                <span
+                    class="badge rounded-pill bg-secondary ms-2 copiedLabel d-none"
+                    >Copied!</span
+                >
+
+                <br /><br />
+                <textarea
+                    class="rounded mt-2 w-100 p-2"
+                    style="height: 150px"
+                    placeholder="translate:"
+                ></textarea>
+            </div>
+            <hr />
+
+            <div
+                class="container-fluid rounded p-4"
+                style="background-color: rgb(164, 164, 164)"
+            >
+                <h3 class="text-light text-center">
+                    <i><b>Translate from Arabic to German</b></i>
+                </h3>
+            </div>
+            <div
+                class="container-fluid rounded p-3"
+                style="
+                    background: linear-gradient(
+                        to top,
+                        gray,
+                        rgb(203, 203, 203)
+                    );
+                "
+            >
+                <span class="text-light fs-4"><b>Write And Translate</b></span>
+                <span class="fs-4" style="color: var(--primary-color)"
+                    ><b>&nbsp Press Here</b></span
+                ><br />
+
+                <button
+                    type="button"
+                    class="btn btn-warning text-light copyBtn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal1"
+                >
+                    Copy
+                </button>
+                <span
+                    class="badge rounded-pill bg-secondary ms-2 copiedLabel d-none"
+                    >Copied!</span
+                >
+
+                <br /><br />
+                <textarea
+                    class="rounded mt-2 w-100 p-2"
+                    style="height: 150px"
+                    placeholder="translate:"
+                ></textarea>
+            </div>
+            <hr />
+        </section>
+
+        <section>
+            <div
+                class="container-fluid"
+                style="
+                    background-image: url(images/cooking.jpg);
+                    height: 350px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                "
+            ></div>
+        </section>
+
+        <section>
+            <div
+                class="container-fluid rounded p-4 mt-5"
+                style="background-color: rgb(164, 164, 164)"
+            >
+                <h3 class="text-light text-center">
+                    <i><b>..Popular Dishes in our Restaurant..</b></i>
+                </h3>
+            </div>
+            <div class="container my-5">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-sm-4 col-10">
+                        <div class="card h-100 special-card">
+                            <div class="p-2">
+                                <img
+                                    src="images/food1.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: slategray">
+                                    <b><i>SALAD</i></b>
+                                </h5>
+                                <div class="d-flex">
+                                    <a
+                                        href="#"
+                                        class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                                        >SHOW</a
+                                    >
+                                </div>
+                                <p class="card-text mt-2">
+                                    Enjoy our warm ambiance and attentive
+                                    service, making every visit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-10">
+                        <div class="card h-100 special-card">
+                            <div class="p-2">
+                                <img
+                                    src="images/pizza.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: slategray">
+                                    <b><i>PIZZA</i></b>
+                                </h5>
+                                <div class="d-flex">
+                                    <a
+                                        href="#"
+                                        class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                                        >SHOW</a
+                                    >
+                                </div>
+                                <p class="card-text mt-2">
+                                    Delicious pizza topped with mozzarella,
+                                    tomatoes, and fresh basil, baked until crust
+                                    is golden crisp.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-10">
+                        <div class="card h-100 special-card">
+                            <div class="p-2">
+                                <img
+                                    src="images/food3.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: slategray">
+                                    <b><i>CHICKEN</i></b>
+                                </h5>
+                                <div class="d-flex">
+                                    <a
+                                        href="#"
+                                        class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                                        >SHOW</a
+                                    >
+                                </div>
+                                <p class="card-text mt-2">
+                                    Book your table effortlessly online or by
+                                    phone to ensure your perfect dining spot.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-4 justify-content-center">
+                    <div class="col-sm-4 col-10">
+                        <div class="card h-100 special-card">
+                            <div class="p-2">
+                                <img
+                                    src="images/food-table.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: slategray">
+                                    <b><i>MEALS</i></b>
+                                </h5>
+                                <div class="d-flex">
+                                    <a
+                                        href="#"
+                                        class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                                        >SHOW</a
+                                    >
+                                </div>
+                                <p class="card-text mt-2">
+                                    Wholesome meals combining rice, meat, and
+                                    vegetables served with sauces, offering
+                                    comforting flavor for everyday dining.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-10">
+                        <div class="card h-100 special-card">
+                            <div class="p-2">
+                                <img
+                                    src="images/Candy-chocolate.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: slategray">
+                                    <b><i>FRIEDES</i></b>
+                                </h5>
+                                <div class="d-flex">
+                                    <a
+                                        href="#"
+                                        class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                                        >SHOW</a
+                                    >
+                                </div>
+                                <p class="card-text mt-2">
+                                    Explore a rich variety of traditional
+                                    Egyptian dishes and international favorites
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-10">
+                        <div class="card h-100 special-card">
+                            <div class="p-2">
+                                <img
+                                    src="images/candy-sweet.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: slategray">
+                                    <b><i>SHAWERMA</i></b>
+                                </h5>
+                                <div class="d-flex">
+                                    <a
+                                        href="#"
+                                        class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                                        >SHOW</a
+                                    >
+                                </div>
+                                <p class="card-text mt-2">
+                                    We source the finest local produce and
+                                    ingredients to guarantee the authentic taste
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5 mt-4 justify-content-center">
+                    <div class="col-sm-4 col-10 mb-5">
+                        <div class="card h-100 special-card">
+                            <div class="p-2">
+                                <img
+                                    src="images/food4.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: slategray">
+                                    <b><i>MEAT</i></b>
+                                </h5>
+                                <div class="d-flex">
+                                    <a
+                                        href="#"
+                                        class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                                        >SHOW</a
+                                    >
+                                </div>
+                                <p class="card-text mt-2">
+                                    Succulent grilled meat prepared with spices,
+                                    herbs, and sauces, delivering juicy texture
+                                    and smoky flavor every bite.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-10 mb-5">
+                        <div class="card h-100 special-card">
+                            <div class="p-2">
+                                <img
+                                    src="images/food2.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: slategray">
+                                    <b><i>PASTRIE</i></b>
+                                </h5>
+                                <div class="d-flex">
+                                    <a
+                                        href="#"
+                                        class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                                        >SHOW</a
+                                    >
+                                </div>
+                                <p class="card-text mt-2">
+                                    Flaky pastries filled with cheese, meat, or
+                                    sweet cream, baked until golden, offering
+                                    crispy texture and delicious taste.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div
+                class="container-fluid"
+                style="
+                    background-image: url(images/cooking.jpg);
+                    height: 350px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                "
+            ></div>
+            <hr />
+        </section>
+
+        <section>
+            <div
+                class="container-fluid rounded py-4"
+                style="background-color: rgb(164, 164, 164)"
+            >
+                <h3 class="text-light text-center">
+                    <i><b>..Thanks For..</b></i>
+                </h3>
+            </div>
+            <div class="container 5 px-5" style="margin-top: 80px">
+                <div class="row justify-content-center" style="gap: 50px">
+                    <div class="col-sm-3 col-8">
+                        <div
+                            class="card bg-dark text-white custom-card"
+                            style="height: 250px; border-radius: 20px"
+                        >
+                            <img
+                                src="images/chef2.jpg"
+                                class="card-img h-100"
+                                alt="..."
+                                style="border-radius: 20px"
+                            />
+                            <div
+                                class="card-img-overlay h-100"
+                                style="
+                                    background-color: rgba(43, 43, 43, 0.664);
+                                    border-radius: 20px;
+                                "
+                            >
+                                <h5
+                                    class="card-title"
+                                    style="
+                                        font-size: 15px;
+                                        color: rgb(230, 230, 230);
+                                    "
+                                >
+                                    <b><i>All Thanks And Appreciation</i></b>
+                                </h5>
+                                <p
+                                    class="card-text"
+                                    style="color: rgb(230, 230, 230)"
+                                >
+                                    🕔 June 22, 2023
+                                </p>
+                                <img
+                                    src="images/chef2.jpg"
+                                    alt="..."
+                                    class="rounded-pill border border-2 border-white position-absolute"
+                                    style="
+                                        width: 70px;
+                                        height: 90px;
+                                        bottom: 55px;
+                                        left: 20px;
+                                        object-fit: cover;
+                                    "
+                                />
+                                <div
+                                    style="
+                                        position: absolute;
+                                        bottom: 5px;
+                                        left: 20px;
+                                    "
+                                >
+                                    <p
+                                        class="mb-1 fw-semibold"
+                                        style="font-size: 1rem"
+                                    >
+                                        Eng.Salem Mohamed
+                                    </p>
+                                    <p
+                                        class="mb-0 fst-italic"
+                                        style="font-size: 0.9rem"
+                                    >
+                                        Director Of UI/UX
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-8">
+                        <div
+                            class="card bg-dark text-white custom-card"
+                            style="height: 250px; border-radius: 20px"
+                        >
+                            <img
+                                src="images/chef3.jpg"
+                                class="card-img h-100"
+                                alt="..."
+                                style="border-radius: 20px"
+                            />
+                            <div
+                                class="card-img-overlay h-100"
+                                style="
+                                    background-color: rgba(43, 43, 43, 0.664);
+                                    border-radius: 20px;
+                                    border-radius: 20px;
+                                "
+                            >
+                                <h5
+                                    class="card-title"
+                                    style="
+                                        font-size: 15px;
+                                        color: rgb(230, 230, 230);
+                                    "
+                                >
+                                    <b><i>All Thanks And Appreciation</i></b>
+                                </h5>
+                                <p
+                                    class="card-text"
+                                    style="color: rgb(230, 230, 230)"
+                                >
+                                    🕔 June 22, 2023
+                                </p>
+                                <img
+                                    src="images/chef3.jpg"
+                                    alt="..."
+                                    class="rounded-pill border border-2 border-white position-absolute"
+                                    style="
+                                        width: 70px;
+                                        height: 90px;
+                                        bottom: 55px;
+                                        left: 20px;
+                                        object-fit: cover;
+                                    "
+                                />
+                                <div
+                                    style="
+                                        position: absolute;
+                                        bottom: 5px;
+                                        left: 20px;
+                                    "
+                                >
+                                    <p
+                                        class="mb-1 fw-semibold"
+                                        style="font-size: 1rem"
+                                    >
+                                        Eng. Mohamed Ilady
+                                    </p>
+                                    <p
+                                        class="mb-0 fst-italic"
+                                        style="font-size: 0.9rem"
+                                    >
+                                        Content Creator
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-8">
+                        <div
+                            class="card bg-dark text-white custom-card"
+                            style="height: 250px; border-radius: 20px"
+                        >
+                            <img
+                                src="images/chef1.jpg"
+                                class="card-img h-100"
+                                alt="..."
+                                style="border-radius: 20px"
+                            />
+                            <div
+                                class="card-img-overlay h-100"
+                                style="
+                                    background-color: rgba(43, 43, 43, 0.664);
+                                    border-radius: 20px;
+                                    border-radius: 20px;
+                                "
+                            >
+                                <h5
+                                    class="card-title"
+                                    style="
+                                        font-size: 15px;
+                                        color: rgb(230, 230, 230);
+                                    "
+                                >
+                                    <b><i>All Thanks And Appreciation</i></b>
+                                </h5>
+                                <p
+                                    class="card-text"
+                                    style="color: rgb(230, 230, 230)"
+                                >
+                                    🕔 June 22, 2023
+                                </p>
+                                <img
+                                    src="images/chef1.jpg"
+                                    alt="..."
+                                    class="rounded-pill border border-2 border-white position-absolute"
+                                    style="
+                                        width: 70px;
+                                        height: 90px;
+                                        bottom: 55px;
+                                        left: 20px;
+                                        object-fit: cover;
+                                    "
+                                />
+                                <div
+                                    style="
+                                        position: absolute;
+                                        bottom: 5px;
+                                        left: 20px;
+                                    "
+                                >
+                                    <p
+                                        class="mb-1 fw-semibold"
+                                        style="font-size: 1rem"
+                                    >
+                                        Eng. Amgad Fathy
+                                    </p>
+                                    <p
+                                        class="mb-0 fst-italic"
+                                        style="font-size: 0.9rem"
+                                    >
+                                        Web Developer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="text-center" style="color: slategray; margin-top: 100px">
+                <b><i>Restaurant News</i></b>
+            </h3>
+            <div
+                class="container-md wider-container px-0 px-md-3"
+                style="margin-top: 40px"
+            >
+                <div
+                    class="card mb-3 w-100 pl-2"
+                    style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150)"
+                >
+                    <div class="row g-0 h-100">
+                        <div
+                            class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block"
+                        >
+                            <div
+                                class="special-image special-image1 min-vh-25 h-100"
+                            ></div>
+                        </div>
+                        <div
+                            class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect"
+                        >
+                            <div class="special-image special-image1"></div>
+                        </div>
+                        <div class="col-md-8 d-flex order-2 order-md-1">
+                            <div class="card-body my-auto">
+                                <h3 class="card-title text-warning fs-3">
+                                    <b><i>Podcast Title</i></b>
+                                </h3>
+                                <p
+                                    class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                    style="font-size: 12px"
+                                >
+                                    <b>Mon.May 25th 2020</b>
+                                </p>
+                                <p class="card-text fs-6 d-none d-md-block">
+                                    In Our Kitchen, Passion Doesn’t Stop At
+                                    Taste Alone; It Extends To Include
+                                    Innovation And Renewal In Every Detail Of
+                                    Our Dishes And Services. We Are Always Keen
+                                    To Provide Everything New For Lovers Of
+                                    Distinctive Taste, From Seasonal Dishes Made
+                                    With The Finest Fresh Ingredients, To The
+                                    Special Offers We Constantly Prepare For You
+                                    To Enjoy A Unique And Unforgettable
+                                    Experience. Follow Our News Section To Stay
+                                    Up-To-Date On The Latest Updates, Whether
+                                    It’s New Recipes, Special Events, Or
+                                    Innovative Product Launches That Suit All
+                                    Tastes. We Are Here To Share Our Passion For
+                                    Food And Provide You With An Exceptional
+                                    Experience With Every Visit And Every Dish.
+                                </p>
+                                <p
+                                    class="card-text d-md-none d-block"
+                                    style="font-size: 13px"
+                                >
+                                    In Our Kitchen, Passion Doesn’t Stop At
+                                    Taste Alone; It Extends To Include
+                                    Innovation And Renewal In Every Detail Of
+                                    Our Dishes And Services. We Are Always Keen
+                                    To Provide Everything New For Lovers Of
+                                    Distinctive Taste, From Seasonal Dishes Made
+                                    With The Finest Fresh Ingredients, To The
+                                    Special Offers We Constantly Prepare For You
+                                    To Enjoy A Unique And Unforgettable
+                                    Experience. Follow Our News Section To Stay
+                                    Up-To-Date On The Latest Updates, Whether
+                                    It’s New Recipes, Special Events, Or
+                                    Innovative Product Launches That Suit All
+                                    Tastes. We Are Here To Share Our Passion For
+                                    Food And Provide You With An Exceptional
+                                    Experience With Every Visit And Every Dish.
+                                </p>
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                                    >🎙 Podcast</a
+                                >
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                                    >🕔 43 mins</a
+                                >
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6"
+                                    >▶ Play Episode</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="card mb-3 w-100 pl-2"
+                    style="
+                        box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+                        margin-top: 40px;
+                    "
+                >
+                    <div class="row g-0 h-100">
+                        <div
+                            class="col-md-4 order-1 order-md-1 d-none d-md-block clip-slant2"
+                        >
+                            <div
+                                class="special-image special-image2 min-vh-25 h-100"
+                            ></div>
+                        </div>
+                        <div
+                            class="col-md-4 order-1 order-md-1 d-md-none d-block clip-rect"
+                        >
+                            <div class="special-image special-image2"></div>
+                        </div>
+                        <div class="col-md-8 d-flex order-2 order-md-1">
+                            <div class="card-body my-auto">
+                                <h3 class="card-title text-warning fs-3">
+                                    <b><i>Podcast Title</i></b>
+                                </h3>
+                                <p
+                                    class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                    style="font-size: 12px"
+                                >
+                                    <b>Mon.May 25th 2020</b>
+                                </p>
+                                <p class="card-text fs-6 d-none d-md-block">
+                                    In Our Kitchen, Passion Doesn’t Stop At
+                                    Taste Alone; It Extends To Include
+                                    Innovation And Renewal In Every Detail Of
+                                    Our Dishes And Services. We Are Always Keen
+                                    To Provide Everything New For Lovers Of
+                                    Distinctive Taste, From Seasonal Dishes Made
+                                    With The Finest Fresh Ingredients, To The
+                                    Special Offers We Constantly Prepare For You
+                                    To Enjoy A Unique And Unforgettable
+                                    Experience. Follow Our News Section To Stay
+                                    Up-To-Date On The Latest Updates, Whether
+                                    It’s New Recipes, Special Events, Or
+                                    Innovative Product Launches That Suit All
+                                    Tastes. We Are Here To Share Our Passion For
+                                    Food And Provide You With An Exceptional
+                                    Experience With Every Visit And Every Dish.
+                                </p>
+                                <p
+                                    class="card-text d-md-none d-block"
+                                    style="font-size: 13px"
+                                >
+                                    In Our Kitchen, Passion Doesn’t Stop At
+                                    Taste Alone; It Extends To Include
+                                    Innovation And Renewal In Every Detail Of
+                                    Our Dishes And Services. We Are Always Keen
+                                    To Provide Everything New For Lovers Of
+                                    Distinctive Taste, From Seasonal Dishes Made
+                                    With The Finest Fresh Ingredients, To The
+                                    Special Offers We Constantly Prepare For You
+                                    To Enjoy A Unique And Unforgettable
+                                    Experience. Follow Our News Section To Stay
+                                    Up-To-Date On The Latest Updates, Whether
+                                    It’s New Recipes, Special Events, Or
+                                    Innovative Product Launches That Suit All
+                                    Tastes. We Are Here To Share Our Passion For
+                                    Food And Provide You With An Exceptional
+                                    Experience With Every Visit And Every Dish.
+                                </p>
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                                    >🎙 Podcast</a
+                                >
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                                    >🕔 43 mins</a
+                                >
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6"
+                                    >▶ Play Episode</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="card mb-3 w-100 pl-2"
+                    style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150)"
+                >
+                    <div class="row g-0 h-100">
+                        <div
+                            class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block"
+                        >
+                            <div
+                                class="special-image special-image3 min-vh-25 h-100"
+                            ></div>
+                        </div>
+                        <div
+                            class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect"
+                        >
+                            <div class="special-image special-image3"></div>
+                        </div>
+                        <div class="col-md-8 d-flex order-2 order-md-1">
+                            <div class="card-body my-auto">
+                                <h3 class="card-title text-warning fs-3">
+                                    <b><i>Podcast Title</i></b>
+                                </h3>
+                                <p
+                                    class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                    style="font-size: 12px"
+                                >
+                                    <b>Mon.May 25th 2020</b>
+                                </p>
+                                <p class="card-text fs-6 d-none d-md-block">
+                                    In Our Kitchen, Passion Doesn’t Stop At
+                                    Taste Alone; It Extends To Include
+                                    Innovation And Renewal In Every Detail Of
+                                    Our Dishes And Services. We Are Always Keen
+                                    To Provide Everything New For Lovers Of
+                                    Distinctive Taste, From Seasonal Dishes Made
+                                    With The Finest Fresh Ingredients, To The
+                                    Special Offers We Constantly Prepare For You
+                                    To Enjoy A Unique And Unforgettable
+                                    Experience. Follow Our News Section To Stay
+                                    Up-To-Date On The Latest Updates, Whether
+                                    It’s New Recipes, Special Events, Or
+                                    Innovative Product Launches That Suit All
+                                    Tastes. We Are Here To Share Our Passion For
+                                    Food And Provide You With An Exceptional
+                                    Experience With Every Visit And Every Dish.
+                                </p>
+                                <p
+                                    class="card-text d-md-none d-block"
+                                    style="font-size: 13px"
+                                >
+                                    In Our Kitchen, Passion Doesn’t Stop At
+                                    Taste Alone; It Extends To Include
+                                    Innovation And Renewal In Every Detail Of
+                                    Our Dishes And Services. We Are Always Keen
+                                    To Provide Everything New For Lovers Of
+                                    Distinctive Taste, From Seasonal Dishes Made
+                                    With The Finest Fresh Ingredients, To The
+                                    Special Offers We Constantly Prepare For You
+                                    To Enjoy A Unique And Unforgettable
+                                    Experience. Follow Our News Section To Stay
+                                    Up-To-Date On The Latest Updates, Whether
+                                    It’s New Recipes, Special Events, Or
+                                    Innovative Product Launches That Suit All
+                                    Tastes. We Are Here To Share Our Passion For
+                                    Food And Provide You With An Exceptional
+                                    Experience With Every Visit And Every Dish.
+                                </p>
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                                    >🎙 Podcast</a
+                                >
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                                    >🕔 43 mins</a
+                                >
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6"
+                                    >▶ Play Episode</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="card mb-3 w-100 pl-2"
+                    style="
+                        box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+                        margin-top: 40px;
+                    "
+                >
+                    <div class="row g-0 h-100">
+                        <div
+                            class="col-md-4 order-1 order-md-1 d-none d-md-block clip-slant2"
+                        >
+                            <div
+                                class="special-image special-image4 min-vh-25 h-100"
+                            ></div>
+                        </div>
+                        <div
+                            class="col-md-4 order-1 order-md-1 d-md-none d-block clip-rect"
+                        >
+                            <div class="special-image special-image4"></div>
+                        </div>
+                        <div class="col-md-8 d-flex order-2 order-md-1">
+                            <div class="card-body my-auto">
+                                <h3 class="card-title text-warning fs-3">
+                                    <b><i>Podcast Title</i></b>
+                                </h3>
+                                <p
+                                    class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                    style="font-size: 12px"
+                                >
+                                    <b>Mon.May 25th 2020</b>
+                                </p>
+                                <p class="card-text fs-6 d-none d-md-block">
+                                    In Our Kitchen, Passion Doesn’t Stop At
+                                    Taste Alone; It Extends To Include
+                                    Innovation And Renewal In Every Detail Of
+                                    Our Dishes And Services. We Are Always Keen
+                                    To Provide Everything New For Lovers Of
+                                    Distinctive Taste, From Seasonal Dishes Made
+                                    With The Finest Fresh Ingredients, To The
+                                    Special Offers We Constantly Prepare For You
+                                    To Enjoy A Unique And Unforgettable
+                                    Experience. Follow Our News Section To Stay
+                                    Up-To-Date On The Latest Updates, Whether
+                                    It’s New Recipes, Special Events, Or
+                                    Innovative Product Launches That Suit All
+                                    Tastes. We Are Here To Share Our Passion For
+                                    Food And Provide You With An Exceptional
+                                    Experience With Every Visit And Every Dish.
+                                </p>
+                                <p
+                                    class="card-text d-md-none d-block"
+                                    style="font-size: 13px"
+                                >
+                                    In Our Kitchen, Passion Doesn’t Stop At
+                                    Taste Alone; It Extends To Include
+                                    Innovation And Renewal In Every Detail Of
+                                    Our Dishes And Services. We Are Always Keen
+                                    To Provide Everything New For Lovers Of
+                                    Distinctive Taste, From Seasonal Dishes Made
+                                    With The Finest Fresh Ingredients, To The
+                                    Special Offers We Constantly Prepare For You
+                                    To Enjoy A Unique And Unforgettable
+                                    Experience. Follow Our News Section To Stay
+                                    Up-To-Date On The Latest Updates, Whether
+                                    It’s New Recipes, Special Events, Or
+                                    Innovative Product Launches That Suit All
+                                    Tastes. We Are Here To Share Our Passion For
+                                    Food And Provide You With An Exceptional
+                                    Experience With Every Visit And Every Dish.
+                                </p>
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                                    >🎙 Podcast</a
+                                >
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                                    >🕔 43 mins</a
+                                >
+                                <a
+                                    href="#"
+                                    class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6"
+                                    >▶ Play Episode</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container w-75" style="margin-top: 100px">
+                <div class="row justify-content-center">
+                    <div
+                        class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
+                    >
+                        <div
+                            class="card border-secondary special-card2"
+                            style="
+                                width: 10rem;
+                                box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+                                height: 180px;
+                            "
+                        >
+                            <div class="card-body text-center">
+                                <h4
+                                    class="card-title fs-6"
+                                    style="color: slategray"
+                                >
+                                    <b><i>Subscribe Now</i></b>
+                                </h4>
+                                <img
+                                    src="images/whatsapp.png"
+                                    alt=""
+                                    class="img-fluid mx-auto"
+                                    style="
+                                        width: 70px;
+                                        height: 70px;
+                                        margin-top: 16px;
+                                    "
+                                /><br />
+                                <a href="#" class="d-inline-block"
+                                    >Go To Link</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
+                    >
+                        <div
+                            class="card border-secondary special-card2"
+                            style="
+                                width: 10rem;
+                                box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+                                height: 180px;
+                            "
+                        >
+                            <div class="card-body text-center">
+                                <h4
+                                    class="card-title fs-6"
+                                    style="color: slategray"
+                                >
+                                    <b><i>Subscribe Now</i></b>
+                                </h4>
+                                <img
+                                    src="images/facebook.png"
+                                    alt=""
+                                    class="img-fluid d-block mx-auto"
+                                    style="
+                                        width: 70px;
+                                        height: 70px;
+                                        margin-top: 16px;
+                                    "
+                                />
+                                <a href="#" class="d-inline-block mt-3"
+                                    >Go To Link</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
+                    >
+                        <div
+                            class="card border-secondary special-card2"
+                            style="
+                                width: 10rem;
+                                box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+                                height: 180px;
+                            "
+                        >
+                            <div class="card-body text-center">
+                                <h4
+                                    class="card-title fs-6"
+                                    style="color: slategray"
+                                >
+                                    <b><i>Subscribe Now</i></b>
+                                </h4>
+                                <img
+                                    src="images/x.png"
+                                    alt=""
+                                    class="img-fluid d-block mx-auto"
+                                    style="
+                                        width: 70px;
+                                        height: 70px;
+                                        margin-top: 16px;
+                                    "
+                                />
+                                <a href="#" class="d-inline-block mt-3"
+                                    >Go To Link</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
+                    >
+                        <div
+                            class="card border-secondary special-card2"
+                            style="
+                                width: 10rem;
+                                box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+                                height: 180px;
+                            "
+                        >
+                            <div class="card-body text-center">
+                                <h4
+                                    class="card-title fs-6"
+                                    style="color: slategray"
+                                >
+                                    <b><i>Subscribe Now</i></b>
+                                </h4>
+                                <img
+                                    src="images/insta.png"
+                                    alt=""
+                                    class="img-fluid d-block mx-auto"
+                                    style="
+                                        width: 70px;
+                                        height: 70px;
+                                        margin-top: 16px;
+                                    "
+                                />
+                                <a href="#" class="d-inline-block mt-3"
+                                    >Go To Link</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-5">
+            <div class="container py-4">
+                <div class="row text-center gy-4">
+                    <div class="col-12 col-sm-4">
+                        <img
+                            src="images/company.png"
+                            alt=""
+                            style="width: 100px; height: 100px; margin: auto"
+                        />
+                        <div class="footer-title m-5">
+                            <b><i>Good Company</i></b>
+                        </div>
+                        <p>Tel: 000-000-000</p>
+                        <p>Address: EGYPT</p>
+                        <p>Fax: 000-000-000</p>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <img
+                            src="images/links.png"
+                            alt=""
+                            style="width: 100px; height: 100px; margin: auto"
+                        />
+                        <div class="footer-title m-5">
+                            <b><i>Important Links</i></b>
+                        </div>
+                        <p>Visit Us</p>
+                        <p>Take A Look</p>
+                        <p>Your Health Is More Important</p>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <img
+                            src="images/vision.png"
+                            alt=""
+                            style="width: 100px; height: 100px; margin: auto"
+                        />
+                        <div class="footer-title m-5">
+                            <b><i>Vision</i></b>
+                        </div>
+                        <p>Services For All</p>
+                        <p>Provide Best Services</p>
+                        <p>You Will Be Better Than Before</p>
+                    </div>
+                </div>
+
+                <hr class="divider" />
+
+                <h5 class="text-center text-warning m-0">
+                    <b
+                        >© 2025 All Rights Reserved. Designed By Eng/ Nabil
+                        Alaa</b
+                    >
+                </h5>
+            </div>
+        </footer>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
