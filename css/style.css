@@ -53,6 +53,14 @@ img {
     color: #ff7a3d;
 }
 
+.text-warning {
+    color: #ff7a3d !important;
+
+}
+
+.border-warning {
+    border-color: #ff7a3d !important;
+}
 
 main {
     padding-top: 80px;
@@ -176,6 +184,39 @@ main {
     }
 
 }
+
+.section-header {
+    background-color: rgb(164, 164, 164);
+    border-radius: 8px;
+}
+
+.special-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.special-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color: slategray;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Images */
+.special-card img {
+    border-radius: 6px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 576px) {
+    .card-text {
+        font-size: 14px;
+    }
+}
+
 
 
 .special-card,
