@@ -205,12 +205,10 @@ main {
     font-style: italic;
 }
 
-/* Images */
 .special-card img {
     border-radius: 6px;
 }
 
-/* Mobile tweaks */
 @media (max-width: 576px) {
     .card-text {
         font-size: 14px;
@@ -330,7 +328,7 @@ main {
 }
 
 .custom-card {
-    transition: transform 0.7s ease;
+    transition: transform 0.5s ease;
     cursor: pointer;
 }
 
